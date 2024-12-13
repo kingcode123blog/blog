@@ -1,0 +1,120 @@
+<!DOCTYPE>
+<html lang="vi">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, inital-scale=1.0">
+		<title>Học Lập Trình C++</title>
+		<link rel="stylesheet" type="text/css" href="./hinhvuong.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.css">
+	</head>
+	<body bgcolor="white">
+		<style>
+		body{
+			margin:0;
+			padding:0;
+		}
+	a.button {
+		display:inline-block;
+		padding:8px 16px;
+		background-color:#fff;
+		text-decoration:none;
+		border-radius: 20px;
+	}
+	a.button.Bai{
+		background: #0099FF;
+		color:#fff;
+	}
+	a.button.Bl{
+		background: #FF5700;
+		color:#fff;
+	}
+	a.button.Bai:hover{
+		background:#1DA1F2;
+	}
+	a.button.Bl:hover{
+		background:#FF6633;
+	}
+	</style>
+		<!--<div class="middle">
+			<button class="btn btn1">Hoverme</button>
+			<button class="btn btn2">Hoverme</button>-->
+		<div class="hinhvong">
+        <div class="list-button">
+        	<a href="" target="_self" class="button Bai">
+    	<span class="button-icon">
+    		<i class="fa-solid fa-code"></i>
+    	</span>
+    	<span class="button-text">
+    		Danh sách bài
+    	</span>
+    </a>    
+    <a href="" target="_self" class="button Bl">
+    	<span class="button-icon">
+    		<i class="fa-solid fa-keyboard"></i>
+    	</span>
+    	<span class="button-text">
+    		Bình luận
+    	</span>
+    </a>    
+        </div>
+    </div>
+    
+		<p>
+		<h1>Bài 1. Duyệt mảng</h1>
+		<p>Cho mảng <b>A[]</b> gồm <b>N</b> phần tử, bạn hãy dùng kỹ năng duyệt mảng để thực hiện những yêu cầu sau</p>
+		<p>1.Duyệt mảng từ trái qua phải</p>
+		<p>2.Duyệt mảng từ phải qua trái </p>
+		<p>3.In ra những phần tử ở chỉ số chẵn </p>
+		<p>4.In ra những phần tử ở chỉ số lẻ  </p>
+		<p>5.Tính tổng của <b>N</b> - 1 cặp phần tử đứng cạnh nhau và in ra kết quả (Vòng for này bạn sẽ tính tổng của A[i] và A[i + 1] thì sẽ duyệt i từ 0 tới N - 2, còn nếu tính tổng A[i] và A[i - 1] thì duyệt i từ 1 tới N - 1).  Một lưu ý khi duyệt các cặp phần tử đứng cạnh nhau trong mảng là phần tử ở chỉ số i = 0 nếu bạn cố truy cập vào A[i - 1] sẽ truy cập vào chỉ số -1 ko hợp lệ trong mảng có rủi ro về giá trị rác cũng như lỗi runtime. Tương tự khi duyệt i = N - 1 nếu cố truy cập vào A[i + 1] sẽ truy cập vào A[N] là chỉ số ko hợp lệ trong mảng. Đối với C++ thì bạn có thể truy cập vào chỉ số không hợp lệ trong mảng nhưng đây là một lỗi mà bạn cần tự kiểm soát</p>
+
+		<hr>
+
+		<h3>Đầu vào</h3>
+
+		<p>Dòng 1 là <strong>N</strong> : số phần tử trong mảng </p>
+
+		<p>Dòng 2 là <strong>N</strong> số viết cách nhau 1 dấu cách</p>
+
+		<hr>
+
+		<h3>Giới hạn</h3>
+
+		<p>1&lt;=N&lt;=100</p>
+
+		<p>0&lt;=A[i]&lt;=1000</p>
+
+		<hr>
+
+		<h3>Đầu ra</h3>
+
+		<p>In ra 5 dòng theo yêu cầu của đề bài</p>
+
+		<hr>
+
+		<h2>Ví dụ :</h2>
+
+		<h3>Input 01</h3>
+		<div class="HV" align="center">
+		<p>
+		10
+		<br>
+		3  3  3  9  9  9  8  5  4  7
+		</p></div>
+		<h3>Output 01</h3>
+		<div class="HV" align="center">
+		<p>3  3  3  9  9  9  8  5  4  7 
+			<br>
+		7  4  5  8  9  9  9  3  3  3 
+		<br> 
+		3  3  9  8  4
+		<br> 
+		3  9  9  5  7
+		<br> 
+		6  6  12  18  18  17  13  9  11
+		</p>
+		</div>
+	</p>
+	</body>
+</html>
